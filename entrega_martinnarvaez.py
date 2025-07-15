@@ -60,6 +60,10 @@ while True:
     opc = input('> Ingrese opcion: ')
     if opc == '1':
         stock_marca()
+    elif opc == '2':
+        busqueda_ram_precio()
+    elif opc == '3':
+        eliminar_producto()
     elif opc == '4':
         print('Saliendo del sistema...')
         print('Programa finalizado.')
