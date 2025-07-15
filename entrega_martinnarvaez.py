@@ -41,6 +41,18 @@ def stock_marca():
     except ValueError:
         print('Valor no valido. Intente nuevamente.')
 
+def busqueda_ram_precio(stock,productos):
+    ram_min = input('> Ingrese RAM minima: ')
+    ram_max = input('> Ingrese RAM maxima: ')
+    precio = input('> Ingrese precio: ')
+    if ram_min >= '1' and ram_max <= '4' and precio >= 200000:
+        print('Estoy deshecho mentalmente.')
+
+def eliminar_producto():
+    modelo = input('> Ingrese modelo a eliminar: ')
+    if modelo == productos[modelo]:
+        productos.remove(modelo)
+        print('Se ha eliminado el modelo exitosamente!')
 
 while True:
 
